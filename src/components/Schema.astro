@@ -10,111 +10,62 @@ const { page = 'homepage', service } = Astro.props;
 const businessData = {
   "@context": "https://schema.org",
   "@type": ["RoofingContractor", "HomeAndConstructionBusiness", "LocalBusiness"],
-  "name": "Maverick Exteriors",
-  "alternateName": ["Maverick Roofing", "Maverick Exteriors Overland Park"],
-  "description": "Maverick Exteriors - Professional roofing contractors serving Overland Park, Kansas City and surrounding areas since 1992. Expert roof repairs, replacements, storm damage restoration, and insurance claims. Protect Your Home Year-Round With Confidence.",
-  "url": "https://overland-park-roofing.vercel.app",
-  "telephone": "+19132686052",
-  "email": "info@maverickexteriors.com",
+  "name": "roofn.co",
+  "alternateName": ["Roofing", "roofing Atlanta"],
+  "description": "ROOFN.CO - Professional roofing contractors serving Atlanta surrounding areas since 1992. Expert roof repairs, replacements, storm damage restoration, and insurance claims. Protect Your Home Year-Round With Confidence.",
+  "url": "https://roofn.co",
+  "telephone": "+4048895545",
+  "email": "book@roofn.co",
   "foundingDate": "1992",
   "slogan": "Protect Your Home Year-Round With Confidence - We Actually Answer & Show Up",
-  
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Overland Park",
-    "addressLocality": "Overland Park", 
-    "addressRegion": "KS",
-    "postalCode": "66212",
+    "streetAddress": "123 Peachtree St NE",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30303",
     "addressCountry": "US"
   },
-  
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "38.9822",
-    "longitude": "-94.6708"
+    "latitude": "33.7490",
+    "longitude": "-84.3880"
   },
-  
   "areaServed": [
-    {
-      "@type": "City",
-      "name": "Overland Park",
-      "containedIn": {
-        "@type": "State", 
-        "name": "Kansas"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Kansas City",
-      "containedIn": {
-        "@type": "State",
-        "name": "Missouri"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Leawood",
-      "containedIn": {
-        "@type": "State",
-        "name": "Kansas"
-      }
-    },
-    {
-      "@type": "City", 
-      "name": "Olathe",
-      "containedIn": {
-        "@type": "State",
-        "name": "Kansas"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Shawnee", 
-      "containedIn": {
-        "@type": "State",
-        "name": "Kansas"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Prairie Village",
-      "containedIn": {
-        "@type": "State",
-        "name": "Kansas"
-      }
-    }
-  ],
-  
+    { "@type": "City", "name": "Atlanta", "containedIn": { "@type": "State", "name": "Georgia" } },
+    { "@type": "City", "name": "Sandy Springs", "containedIn": { "@type": "State", "name": "Georgia" } },
+    { "@type": "City", "name": "Marietta", "containedIn": { "@type": "State", "name": "Georgia" } },
+    { "@type": "City", "name": "Roswell", "containedIn": { "@type": "State", "name": "Georgia" } },
+    { "@type": "City", "name": "Alpharetta", "containedIn": { "@type": "State", "name": "Georgia" } },
+    { "@type": "City", "name": "Decatur", "containedIn": { "@type": "State", "name": "Georgia" } }
+  ], // <-- comma added here
   "openingHours": [
     "Mo-Fr 07:00-19:00",
-    "Sa 08:00-17:00"
+    "Sat 08:00-17:00",
+    "Sun 08:00-17:00"
   ],
-  
   "contactPoint": [
     {
       "@type": "ContactPoint",
-      "telephone": "+19132686052",
+      "telephone": "+14048895545",
       "contactType": "customer service",
       "availableLanguage": "English",
-      "areaServed": ["US-KS", "US-MO"]
+      "areaServed": ["US-GA"]
     },
     {
-      "@type": "ContactPoint", 
-      "telephone": "+19132686052",
+      "@type": "ContactPoint",
+      "telephone": "+14048895545",
       "contactType": "emergency",
       "availableLanguage": "English",
       "hoursAvailable": "24/7"
     }
   ],
-  
   "priceRange": "$$",
-  "paymentAccepted": ["Cash", "Check", "Credit Card", "Insurance Claims", "Financing"],
-  
+  "paymentAccepted": ["Cash", "Crypto", "Credit Card", "Insurance Claims", "Financing"],
   "logo": {
     "@type": "ImageObject",
-    "url": "https://overland-park-roofing.vercel.app/favicon.svg"
+    "url": "https://roofn.co/favicon.svg"
   },
-  
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
@@ -122,7 +73,6 @@ const businessData = {
     "bestRating": "5",
     "worstRating": "1"
   },
-  
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Roofing Services",
@@ -133,15 +83,9 @@ const businessData = {
           "@type": "Service",
           "name": "Emergency Roof Repair",
           "description": "24/7 emergency roof repairs with 2-hour response guarantee",
-          "provider": {
-            "@type": "RoofingContractor",
-            "name": "Maverick Exteriors"
-          },
-          "areaServed": ["Overland Park, KS", "Kansas City, MO", "Leawood, KS"],
-          "availableAtOrFrom": {
-            "@type": "Place",
-            "name": "Overland Park, Kansas"
-          }
+          "provider": { "@type": "RoofingContractor", "name": "roofn.co" },
+          "areaServed": ["Atlanta, GA","Sandy Springs, GA","Marietta, GA","Roswell, GA","Alpharetta, GA","Decatur, GA"],
+          "availableAtOrFrom": { "@type": "Place", "name": "Atlanta, Georgia" }
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -151,22 +95,13 @@ const businessData = {
         }
       },
       {
-        "@type": "Offer", 
+        "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
           "name": "Roof Replacement",
           "description": "Complete roof replacement with premium materials and lifetime warranties",
-          "provider": {
-            "@type": "RoofingContractor",
-            "name": "Maverick Exteriors"
-          }
+          "provider": { "@type": "RoofingContractor", "name": "roofn.co" }
         },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "priceCurrency": "USD",
-          "minPrice": "8000",
-          "maxPrice": "45000"
-        }
       },
       {
         "@type": "Offer",
@@ -176,7 +111,7 @@ const businessData = {
           "description": "Complete storm damage assessment and insurance claim assistance",
           "provider": {
             "@type": "RoofingContractor",
-            "name": "Maverick Exteriors"
+            "name": "roofn.co"
           }
         }
       },
@@ -188,7 +123,7 @@ const businessData = {
           "description": "Full insurance claim handling from assessment to completion",
           "provider": {
             "@type": "RoofingContractor",
-            "name": "Maverick Exteriors"
+            "name": "roofn.co"
           }
         }
       },
@@ -200,7 +135,7 @@ const businessData = {
           "description": "Seamless gutter installation and gutter guard systems",
           "provider": {
             "@type": "RoofingContractor", 
-            "name": "Maverick Exteriors"
+            "name": "roofn.co"
           }
         },
         "priceSpecification": {
@@ -218,7 +153,7 @@ const businessData = {
           "description": "Solar-ready roofing systems and solar panel installation coordination",
           "provider": {
             "@type": "RoofingContractor",
-            "name": "Maverick Exteriors"
+            "name": "roofn.co"
           }
         }
       },
@@ -227,10 +162,10 @@ const businessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Historic Home Roofing",
-          "description": "Specialized roofing for historic homes in Prairie Village and Mission Hills",
+          "description": "Specialized roofing for historic homes in Atlanta, Georgia",
           "provider": {
             "@type": "RoofingContractor",
-            "name": "Maverick Exteriors"
+            "name": "roofn.co"
           }
         }
       }
@@ -270,7 +205,7 @@ const businessData = {
     "Solar Integration",
     "Historic Home Restoration",
     "Energy Efficiency",
-    "Kansas Weather",
+    "Atlanta Weather",
     "Building Codes"
   ],
   
@@ -289,12 +224,12 @@ const businessData = {
     {
       "@type": "EducationalOccupationalCredential", 
       "credentialCategory": "License",
-      "name": "Kansas Roofing Contractor License"
+      "name": "Atlanta Roofing Contractor License"
     },
     {
       "@type": "EducationalOccupationalCredential",
       "credentialCategory": "License", 
-      "name": "Missouri Roofing Contractor License"
+      "name": "Atlanta Roofing Contractor License"
     }
   ]
 };
@@ -306,7 +241,7 @@ const getServiceSchema = (serviceName: string) => {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "Emergency Roof Repair Services",
-      "description": "24/7 emergency roof repairs with same-day response in Overland Park, Kansas",
+      "description": "24/7 emergency roof repairs with same-day response in Atlanta, Georgia",
       "provider": businessData,
       "areaServed": businessData.areaServed,
       "hasOfferCatalog": {
@@ -338,7 +273,7 @@ const getServiceSchema = (serviceName: string) => {
       "@context": "https://schema.org",
       "@type": "Service", 
       "name": "Insurance Claim Roofing Services",
-      "description": "Complete insurance claim handling for storm damaged roofs in Kansas City area",
+      "description": "Complete insurance claim handling for storm damaged roofs in Atlanta area",
       "provider": businessData,
       "serviceType": "Insurance Claims Assistance"
     },
@@ -374,13 +309,13 @@ if (page !== 'homepage') {
         "@type": "ListItem",
         "position": 1,
         "name": "Home", 
-        "item": "https://overland-park-roofing.vercel.app"
+        "item": "https://roofn.co"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": page.charAt(0).toUpperCase() + page.slice(1),
-        "item": `https://overland-park-roofing.vercel.app/${page}`
+        "item": `https://roofn.co/${page}`
       }
     ]
   };
@@ -406,7 +341,7 @@ if (page === 'insurance-claims' || page === 'pricing') {
         "name": "How quickly can you respond to emergencies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We guarantee same-day emergency response for calls received before 10 AM. Our 24/7 hotline is (913) 268-6052."
+          "text": "We guarantee same-day emergency response for calls received before 10 AM. Our 24/7 hotline is (404) 889-5545."
         }
       },
       {
@@ -414,7 +349,7 @@ if (page === 'insurance-claims' || page === 'pricing') {
         "name": "What areas do you serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We serve Overland Park, Kansas City, Leawood, Olathe, Shawnee, Prairie Village, and surrounding Kansas City metropolitan areas."
+          "text": "We serve Atlanta, Sandy Springs, Marietta, Roswell, Alpharetta, Decatur, and surrounding Atlanta metropolitan areas.."
         }
       },
       {

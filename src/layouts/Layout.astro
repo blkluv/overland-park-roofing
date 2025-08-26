@@ -9,10 +9,10 @@ export interface Props {
 	service?: string;
 }
 
-const { title, description = "Professional roofing services in Overland Park, Kansas. Expert roof repairs, replacements, and storm damage restoration.", page, service } = Astro.props;
+const { title, description = "Professional roofing services in Atlanta, Georgia. Expert roof repairs, replacements, and storm damage restoration.", page, service } = Astro.props;
 
 // Generate canonical URL based on current page
-const baseUrl = "https://overland-park-roofing.vercel.app";
+const baseUrl = "https://atlanta-roofing.vercel.app";
 const currentPath = Astro.url.pathname;
 const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 ---
@@ -43,8 +43,8 @@ const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between h-16">
 					<div class="flex items-center">
-						<a href="/" class="text-2xl font-bold">Maverick Exteriors</a>
-						<span class="ml-2 text-sm text-blue-200">Overland Park</span>
+						<a href="/" class="text-2xl font-bold">ROOFN.CO</a>
+						<span class="ml-2 text-sm text-blue-200">Atlanta</span>
 					</div>
 					<div class="hidden md:flex items-center space-x-8">
 						<a href="/" class="hover:text-blue-200 transition-colors">Home</a>
@@ -56,18 +56,18 @@ const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 							<div class="absolute top-full left-0 bg-white text-gray-900 shadow-lg rounded-lg mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
 								<a href="/service-areas" class="block px-4 py-2 hover:bg-blue-50 rounded-t-lg font-semibold">All Service Areas</a>
 								<div class="border-t border-gray-200"></div>
-								<a href="/locations/overland-park" class="block px-4 py-2 hover:bg-blue-50">Overland Park</a>
-								<a href="/locations/kansas-city" class="block px-4 py-2 hover:bg-blue-50">Kansas City</a>
-								<a href="/locations/leawood" class="block px-4 py-2 hover:bg-blue-50">Leawood</a>
-								<a href="/locations/olathe" class="block px-4 py-2 hover:bg-blue-50">Olathe</a>
-								<a href="/locations/shawnee" class="block px-4 py-2 hover:bg-blue-50">Shawnee</a>
-								<a href="/locations/lenexa" class="block px-4 py-2 hover:bg-blue-50 rounded-b-lg">Lenexa</a>
+								<a href="/locations/atlanta" class="block px-4 py-2 hover:bg-blue-50">Atlanta</a>
+								<a href="/locations/marietta" class="block px-4 py-2 hover:bg-blue-50">Marietta</a>
+								<a href="/locations/sandy-springs" class="block px-4 py-2 hover:bg-blue-50">Sandy Springs</a>
+								<a href="/locations/roswell" class="block px-4 py-2 hover:bg-blue-50">Roswell</a>
+								<a href="/locations/alpharetta" class="block px-4 py-2 hover:bg-blue-50">Alpharetta</a>
+								<a href="/locations/decatur" class="block px-4 py-2 hover:bg-blue-50 rounded-b-lg">Decatur</a>
 							</div>
 						</div>
 						<a href="/about" class="hover:text-blue-200 transition-colors">About</a>
 						<a href="/contact" class="hover:text-blue-200 transition-colors">Contact</a>
-						<a href="tel:913-268-6052" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded font-semibold transition-colors">
-							Call (913) 268-6052
+						<a href="tel:404-889-5545" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded font-semibold transition-colors">
+							Call/Text (404) 889-5545
 						</a>
 					</div>
 					<div class="md:hidden flex items-center">
@@ -86,8 +86,8 @@ const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 					<a href="/service-areas" class="block px-3 py-2 hover:bg-blue-700 rounded">Service Areas</a>
 					<a href="/about" class="block px-3 py-2 hover:bg-blue-700 rounded">About</a>
 					<a href="/contact" class="block px-3 py-2 hover:bg-blue-700 rounded">Contact</a>
-					<a href="tel:913-268-6052" class="block mx-3 my-2 bg-red-600 hover:bg-red-700 px-4 py-2 rounded font-semibold text-center">
-						Call (913) 268-6052
+					<a href="tel:404-889-5545" class="block mx-3 my-2 bg-red-600 hover:bg-red-700 px-4 py-2 rounded font-semibold text-center">
+						Call/Text (404) 889-5545
 					</a>
 				</div>
 			</div>
@@ -101,10 +101,10 @@ const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 			<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 					<div>
-						<h3 class="text-2xl font-bold mb-4">Maverick Exteriors</h3>
-						<p class="text-gray-300 mb-4">Protect Your Home Year-Round With Confidence. Serving Kansas City and Overland Park since 1992.</p>
+						<h3 class="text-2xl font-bold mb-4">ROOFN.CO</h3>
+						<p class="text-gray-300 mb-4">Protect Your Home Year-Round With Confidence. Serving Atlanta and surrounding areas since 1992.</p>
 						<div class="text-xl font-semibold text-orange-400">
-							<a href="tel:913-268-6052">(913) 268-6052</a>
+							<a href="tel:404-889-5545">(404) 889-5545</a>
 						</div>
 					</div>
 					<div>
@@ -120,17 +120,17 @@ const canonicalUrl = `${baseUrl}${currentPath === '/' ? '' : currentPath}`;
 					<div>
 						<h4 class="text-lg font-semibold mb-4">Service Areas</h4>
 						<ul class="space-y-2 text-gray-300">
-							<li><a href="/locations/overland-park" class="hover:text-white">Overland Park, KS</a></li>
-							<li><a href="/locations/kansas-city" class="hover:text-white">Kansas City, MO</a></li>
-							<li><a href="/locations/leawood" class="hover:text-white">Leawood, KS</a></li>
-							<li><a href="/locations/olathe" class="hover:text-white">Olathe, KS</a></li>
-							<li><a href="/locations/shawnee" class="hover:text-white">Shawnee, KS</a></li>
-							<li><a href="/locations/lenexa" class="hover:text-white">Lenexa, KS</a></li>
+							<li><a href="/locations/atlanta" class="hover:text-white">Atlanta, GA</a></li>
+							<li><a href="/locations/marietta" class="hover:text-white">Marietta, GA</a></li>
+							<li><a href="/locations/sandy-springs" class="hover:text-white">Sandy Springs, GA</a></li>
+							<li><a href="/locations/roswell" class="hover:text-white">Roswell, GA</a></li>
+							<li><a href="/locations/alpharetta" class="hover:text-white">Alpharetta, GA</a></li>
+							<li><a href="/locations/decatur" class="hover:text-white">Decatur, GA</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-					<p>&copy; 2025 Maverick Exteriors. All rights reserved.</p>
+					<p>&copy; 2025 ROOFN.CO. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
